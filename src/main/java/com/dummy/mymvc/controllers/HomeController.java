@@ -23,4 +23,12 @@ public class HomeController {
 		model.addAttribute("appname", applicationContext.getDisplayName());
 		return "home";
 	}
+
+	@GetMapping("/new")
+        public String newPage(Model model) {
+                model.addAttribute("msg", "this is a new page creatd");
+                model.addAttribute("appname", applicationContext.getDisplayName());
+                return "new";
+        }
+
 }
