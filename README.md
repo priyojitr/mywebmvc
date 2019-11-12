@@ -9,8 +9,9 @@ Here are the steps that are followed:
   `docker images` - it should list all images in local repository.
     > * maven
     > * tomcat
-4. run the tomcat container - <br>
+4. this is an **optional** step - run the tomcat container - <br>
   `docker run -d -p 8080:8080 --name tomcat-dock tomcat:9.0.27-jdk8-openjdk`
+    > this will host a tomcat container on port **`8080`**.
 5. run the application container - <br>
   `docker run -d -p 80:8080 --name myapp-dock myapp:mvc`
     > * this will host the application on port `80`.
@@ -26,6 +27,12 @@ Here are the steps that are followed:
     * login to docker hub profile - `docker login` - enter the credential as prompted.
     * create a tag for the image - `docker tag myapp:latest priyojitr/myapp:prhub`
         > **`priyojitr`** - is the namespace to which the image will be pushed. it will not pushed if namespace or profile name is not mentioned.
+        > the image **will be overidden** if same name:tag is provided during _image_ `push` or `build`.
 9. to re-use the published image, it needs to be pulled - <br>
   `docker pull priyojitr/myapp:prhub`
     > name of the image published in docker hub - **`priyojitr/myapp:prhub`**.
+10. to update an existing a image due to changes in corresponding running container - <br>
+  `docker commit -m "commit message" myapp2-dock myapp:v3`
+    > this will update image with the changes made within the running container
+    > **`myapp2-dock`** - name of the running container undergone changes.
+    > **`myapp:v3`** - name of the updated image of the running container.
