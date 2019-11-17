@@ -39,7 +39,8 @@ public class HomeController {
 	
 	@GetMapping("/add")
 	public String addEntry(Model model) {
-		MyTable myTableData = new MyTable(1, "my name");
+		MyTable myTableData = new MyTable();
+		myTableData.setName("new name");
 		this.dao.insertRecord(myTableData);
 		model.addAttribute("msg","data has been inserted, check db");
 		return "add";
