@@ -10,7 +10,7 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<java.version>1.8</java.version>
-		<junit.ver>4.12</junit.ver>
+		<junit.ver>4.13.1</junit.ver>
 		<spring.mvc.ver>5.2.0.RELEASE</spring.mvc.ver>
 		<lombok.ver>1.18.10</lombok.ver>
 		<servlet.ver>4.0.1</servlet.ver>
