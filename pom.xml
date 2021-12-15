@@ -15,7 +15,7 @@
 		<lombok.ver>1.18.10</lombok.ver>
 		<servlet.ver>4.0.1</servlet.ver>
 		<jstl.ver>1.2</jstl.ver>
-		<log.ver>2.13.3</log.ver>
+		<log.ver>2.16.0</log.ver>
 	</properties>
 	<dependencies>
 		<dependency>
