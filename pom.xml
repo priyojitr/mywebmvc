@@ -11,7 +11,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<junit.ver>4.13.1</junit.ver>
-		<spring.mvc.ver>5.2.0.RELEASE</spring.mvc.ver>
+		<spring.mvc.ver>5.3.18</spring.mvc.ver>
 		<lombok.ver>1.18.10</lombok.ver>
 		<servlet.ver>4.0.1</servlet.ver>
 		<jstl.ver>1.2</jstl.ver>
